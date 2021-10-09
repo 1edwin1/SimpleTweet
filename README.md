@@ -34,9 +34,8 @@ The following **additional** features are implemented:
 - [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
+![Twitter](https://user-images.githubusercontent.com/41847771/136670115-b1799b26-87ce-4e7e-9cbc-245753547037.gif)
 
-
-https://user-images.githubusercontent.com/41847771/136644197-a0a155b9-f15f-4e68-9a6c-8187f31be72f.mp4
 
 
 
