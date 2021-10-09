@@ -23,7 +23,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
     //Pass in the context and list of tweets
 
 
-    public TweetsAdapter(Context context) {
+    public TweetsAdapter(Context context, List<Tweet> tweets) {
         this.context = context;
         this.tweets = tweets;
     }
@@ -32,8 +32,8 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater.from(context).inflate(R.layout.item_tweet,parent,false);
-        return new ViewHolder(view);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_tweet,parent,false);
+        return new ViewHolder(view); //don't know issue of this
     }
 
     //bind values based on the position of the element
@@ -58,7 +58,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
 
     //Add a list of items
     public void addAll(List<Tweet> tweetsList){
-        tweets.addAll(tweetList);
+        tweets.addAll(tweetsList);
         notifyDataSetChanged();
     }
 
